@@ -533,7 +533,7 @@ h4
 
 .upper-column-1
 	width: 241px
-	height: 790px
+	height: 850px
 	position: absolute
 	box-shadow: 0px 0px 21px rgba(0, 163, 226, 0.28)
 	z-index: 101
@@ -546,7 +546,7 @@ h4
 
 .upper-column-2
 	width: 241px
-	height: 790px
+	height: 850px
 	position: absolute
 	box-shadow: 0px 0px 21px rgba(0, 163, 226, 0.28)
 	z-index: 101
@@ -558,7 +558,7 @@ h4
 			display: block
 
 .red-btn
-	display: none
+	display: block
 	background-color: $darkred
 	color: #fff
 	text-transform: uppercase
@@ -775,6 +775,11 @@ footer
 	bottom: 25px
 	right: 25px
 	cursor: pointer
+	background-image: url('../img/order-button-bg-normal.png')
+	background-repeat: no-repeat
+	background-position: 0 0
+	&:hover
+		background-image: url('../img/order-button-bg-hover.png')
 .order-window
 	background-color: rgba(0, 0, 0, 0.5)
 	display: none

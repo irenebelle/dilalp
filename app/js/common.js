@@ -5,6 +5,9 @@
   	 dots: true
   });
 
+ $("#phone").mask("+38(099)999-99-99");
+
+
  $('.recomendations-link').click(function(){
        $('html, body').animate({scrollTop:$('#recomendations').position().top}, 2000);
 });

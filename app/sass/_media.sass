@@ -168,6 +168,13 @@
 			.upper-column-2
 				left: 840px
 
+	.woman-price
+		.upper-column-1, .upper-column-2
+				height: 800px
+	.man-price
+		.upper-column-1, .upper-column-2
+				height: 840px
+
 
 	.dila-container
 		width: 100%
@@ -233,6 +240,15 @@
 				appearance: none
 				background-position: 90% 20px
 				margin: 0
+	.rules, .results
+		.dila-container
+			margin-left: 20px
+	footer
+		.copyright
+			width: 100%
+
+	.red-btn
+		width: 180px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1024px)
@@ -281,6 +297,10 @@
 			.upper-column-2
 				left: 705px
 
+	.woman-price
+		.upper-column-1, .upper-column-2
+			height: 840px
+
 
 	.slider
 		.owl-carousel
@@ -312,13 +332,16 @@
 	.results
 		.result-row
 			line-height: 24px
+			margin-top: 70px
 			span
 				line-height: 28px
 		.result-block-left
 			width: 50%
+			height: auto
 		.result-block-right
 			width: 50%
 			margin-left: 20px
+			height: auto
 			
 	footer
 		.copyright
@@ -386,6 +409,11 @@
 			.upper-column-2
 				left: 635px
 
+	.results
+		.result-row
+			.result-block-right
+				width: 43%
+
 @media only screen and (max-width : 830px)
 	.woman-row, .man-row
 		.box03w
@@ -409,8 +437,14 @@
 			.upper-column-2
 				left: 605px
 
+	.woman-price, .man-price
+		.upper-column-1, .upper-column-2
+			height: 870px
+
 	.contacts-section
 		height: 750px
+
+
 
 @media only screen and (max-width : 810px)
 	.slider
@@ -451,6 +485,8 @@
 				left: 350px
 			.upper-column-2
 				left: 555px
+			.upper-column-1, .upper-column-2
+				height: 870px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -486,10 +522,8 @@
 				width: 350px
 			.column-2, .column-3, .upper-column-1, .upper-column-2
 				width: 170px
-			.upper-column-1:hover, .upper-column-2:hover
-				height: 900px
 			.upper-column-1, .upper-column-2
-				height: 840px
+				height: 900px
 			.upper-column-1
 				left: 350px
 			.upper-column-2
@@ -515,9 +549,8 @@
 				padding-left: 20px
 		.man-price-table
 			.upper-column-2, .upper-column-1
-				height: 880px
-				&:hover
-					height: 930px
+				height: 930px
+				
 
 
 	
@@ -594,16 +627,18 @@
 					margin-bottom: 20px
 
 	.results
-		height: 600px
+		padding-bottom: 20px
+		height: auto
 		.result-row
 			margin-bottom: 70px
 			line-height: 24px
 			span
 				line-height: 28px
 		.result-block-left
-			width: 100%
+			width: 50%
+			height: auto
 		.result-block-right
-			width: 100%
+			width: 43%
 			margin-left: 20px
 
 @media only screen and (max-width : 750px)
@@ -701,6 +736,14 @@
 			.table-row p
 				font-size: 0.6em
 				margin-left: 10px
+
+	.results 
+		height: auto
+		padding-bottom: 20px
+		.result-row
+			.result-block-left
+	 			height: auto
+
 
 @media only screen and (max-width : 650px)
 	.slider	
@@ -979,6 +1022,8 @@
 
 
 	.rules
+		.dila-container
+			margin-left: 0
 		p
 			margin-top: 20px
 			margin-bottom: 20px
@@ -1069,6 +1114,10 @@
 
 
 	.results
+		.dila-container
+			padding-left: 20px
+			padding-right: 10px
+			margin-left: 0
 		.result-row
 			display: block
 			width: 100%
@@ -1079,26 +1128,31 @@
 				margin-right: 0
 				float: left
 				margin-bottom: 20px
+				min-height: 80px
 	
 	.contacts-section
 		padding-bottom: 20px
 		.form
 			line-height: initial
 			height: 200px
+			display: block
+			padding-bottom: 20px
 			img
 				display: none
 			span
-				float: left
 				display: block
-				width: 95%
+				width: 100%
 				text-align: center
 				margin-left: 0
 				margin-right: 0
-				margin-top: 20px
-			.select
-				float: left
-				width: 90%
 				margin-top: 40px
+				float: right
+				font-size: 1em
+			.select
+				float: none
+				width: 100%
+				margin-top: 40px
+				padding-left: 30px
 		.cities
 			.city-column
 				width: 90%
@@ -1128,7 +1182,10 @@
 				img
 					margin-top: 10px
 
-
+@media only screen and (max-width : 480px)
+	.contacts-section
+		.form
+			height: 220px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 360px)
 	.order-window

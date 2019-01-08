@@ -128,22 +128,25 @@ document.querySelector('.order-button').addEventListener('click', showOrderWindo
               document.querySelector('.woman-row .hidden-part').style.display = 'block';
               document.querySelector('.woman-row .red-arrow').style.transform = 'rotate(180deg)';
 
-          }
+         }
         }
      
   });
 //рпячет и показывает таблички про исследования для мужчин
 
-    document.querySelector('.man-row').addEventListener('click', function(event) {
+    document.querySelector('.man-row h4').addEventListener('click', function(event) {
       if(document.documentElement.clientWidth<=600) {
-       if(event.target.className == 'h4') {
-         if(event.target.parentNode.nextElementSibling.style.display == 'block') {
-          event.target.parentNode.nextElementSibling.style.display = 'none';
-        } else if (event.target.parentNode.nextElementSibling.style.display == '' || event.target.parentNode.nextElementSibling.style.display == 'none' ){
-          event.target.parentNode.nextElementSibling.style.display = 'block';
-        }
-       }
-    }
+          if(document.querySelector('.man-row .hidden-part').style.display == 'block') {
+              document.querySelector('.man-row .hidden-part').style.display = 'none';
+              document.querySelector('.man-row .red-arrow').style.transform = 'rotate(0deg)';
+
+
+         } else if (document.querySelector('.man-row .hidden-part').style.display == '' || document.querySelector('.man-row .hidden-part').style.display == 'none' ){
+              document.querySelector('.man-row .hidden-part').style.display = 'block';
+              document.querySelector('.man-row .red-arrow').style.transform = 'rotate(180deg)';
+
+         }
+      }
   });
 
 //создает голубые стрлочки и вставляет цену  и кнопку заказа для каждой программы
